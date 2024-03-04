@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid; */
+}
+body {
+    width: 100%;
+    font-family: "Rubik", sans-serif;
+    background-color: hsl(270, 20%, 96%);
+    display: flex;
+    flex-direction: column;
+}
+.Thepage {
+    max-width: 1440px;
+    display: flex;
+    min-height: 700px;
+    flex-wrap: wrap;
+}
+.Thepage > .leftSide {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 375px;
+    min-height: 700px;
+}
+.leftSide > .mobile {
+    width: 280px;
+    height: 520px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-right: 60px;
+    background-color: #ffffff;
+}
+
+.mobile > .screen {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(270, 20%, 96%);
+}
+.massanger {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.massanger > .Top {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Top > .white {
+    width: 60%;
+    height: 70%;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.massanger > .themassangerInfo {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.themassangerInfo > .icon {
+    margin-left: 10px;
+}
+.themassangerInfo > .options {
+    margin-right: 10px;
+}   
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -45px;
+}
+.Info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: -45px;
+}
+.Info > .messangerName {
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+.Info > .messangerState {
+    font-size: 10px;
+    font-weight: 400;
+    color: hsl(276, 69%, 79%);
+}
+
+
+.Messages {
+    background-color: hsl(270, 20%, 96%);
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.Messages > .YourMessages {
+    display: flex;
+}
+.Messages > .YourMessages > .leftSide {
+    font-size: 10px;
+    padding: 4px;
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(260, 6%, 90%);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.Messages > .YourMessages > .rightSide {
+    flex: 2;
+    min-width: 40%;
+}
+.Messages > .Messager-Messages {
+    display: flex;
+}
+.Messages > .Messager-Messages > .leftSide {
+    flex: 2;
+    min-width: 20%;
+}
+.Messages > .Messager-Messages > .rightSide {
+    /* flex: 1; */
+    font-size: 10px;
+    padding: 4px;
+    color: hsl(270, 7%, 64%);
+    max-width: 60%;
+    display: flex;
+    gap: 5px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.Messages > .Messager-Messages > .leftSid {
+    min-width: 10%;
+}
+.Messager-photos {
+    flex: 1;
+    direction: rtl;
+    min-width: 90%;
+}
+.code {
+    background-color: hsl(260, 100%, 99%);
+}
+.dog {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.YourMessagesquations {
+    display: flex;
+}
+.YourMessagesquations > .leftSide {
+    flex: 3;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+.YourMessagesquations > .leftSide > .circle{
+    width: 15px;
+    height: 15px;
+    border: 2px solid hsl(289, 100%, 72%);
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.YourMessagesquations > .leftSide > .info {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5px;
+}
+.YourMessagesquations > .leftSide > .info > .about {
+    font-size: 10px;
+    color: hsl(289, 100%, 84%);
+    font-weight: 500;
+} 
+.YourMessagesquations > .leftSide > .info > .about > .time {
+    font-size: 11px;
+    font-weight: 600;
+}
+.YourMessagesquations > .leftSide > .info > .price {
+    font-weight: 600;
+    color: #ffffff;
+}
+.YourMessagesquations > .rightSide {
+    flex: 1;
+}
+
+.wirte {
+    display: flex;
+    width: 95%;
+    padding: 5px;
+    margin: auto;
+    background-color: white;
+    font-size: 10px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+.wirte > .input {
+    flex: auto;
+    padding-left: 5px;
+    margin-left: 5px;
+    border: none;
+}
+.wirte > .button {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: hsl(271, 36%, 24%);
+    color: #ffffff;
+    border: none;
+}
+.stylingOne {
+    width: 450px;
+    height: 700px;
+    background-color: hsl(264, 100%, 61%);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-end-end-radius: 270px;
+    border-end-start-radius: 170px;
+}
+
+.Thepage > .rightSide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 375px;
+}
+.Thepage > .rightSide > h1 {
+    color: hsl(271, 36%, 24%);
+    font-size: 48px;
+}
+.Thepage > .rightSide > p {
+    max-width: 450px;
+    color:  hsl(270, 7%, 64%);
+}
+.stylingTwo {
+    width: 300px;
+    height: 600px;
+    background-color: hsl(270, 4%, 91%);
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: auto;
+    margin-bottom: -180px;
+    border-start-start-radius: 270px;
+    /* margin-top: 100px; */
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 700px) {
+    .stylingOne {
+        width: 200px;
+        height: 550px;
+        background-color: hsl(264, 100%, 61%);
+        top: 0;
+        left: 0;
+        border-end-end-radius: 40;
+        border-end-start-radius: 0;
+    }
+    .Thepage > .rightSide {
+        text-align: center;
+    }
+    .Thepage > .rightSide > p {
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+    .stylingTwo {
+        width: 250px;
+        height: 400px;
+        right: 0;
+        bottom: auto;
+        margin-bottom: -130px;
+        border-start-start-radius: 270px;
+    }
+
+}
+
+
+
+
+
